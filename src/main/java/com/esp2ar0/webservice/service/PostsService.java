@@ -11,10 +11,10 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@AllArgsConstructor
 @Service
 public class PostsService {
 
-    @Autowired
     private PostsRepository postsRepository;
 
     @Transactional
